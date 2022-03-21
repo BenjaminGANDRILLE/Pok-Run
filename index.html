@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<style>
+
+
+/* body{
+  background-image: url("http://junkerhq.net/xrgb/images/f/f5/Scroll.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  
+} */
+
+:root{
+    --pixel-size: 10;
+}
+
+ .Character{
+    width: calc(15px*var(--pixel-size));
+    height: calc(19px*var(--pixel-size));
+      overflow: hidden;
+      position: relative;
+      margin: 10em auto;
+      background-color: brown; 
+     
+     
+}
+
+.Character_spritesheet{
+    animation: moveSpritesheet 0.5s steps(3) infinite;
+    width: calc(44px*var(--pixel-size));
+}
+
+.pixelart{
+    image-rendering: pixelated;
+    
+}
+.back{
+    margin-top: 80%;
+    
+}
+
+.face-right{
+top:calc(-32px*var(--pixel-size))
+}
+
+
+
+@keyframes moveSpritesheet {
+    from{
+        transform: translate3d(0px,0,);
+    }
+
+    to{
+        transform: translate3d(-100%,0,0);
+    }
+    
+}
+
+</style>
+
+<html>
+
+<div class="back">
+    <body>
+
+
+<div class="Character">
+
+   <!-- file:///home/rsma06/T%C3%A9l%C3%A9chargements/sonic%20(1).png -->
+
+    <img class="Character_spritesheet pixelart" src="file:///home/rsma06/T%C3%A9l%C3%A9chargements/pokeballani-removebg-preview%20(2)%20(2)%20(2).png" width="50px" alt="Character">
+
+</div>
+
+
+    </body>
+</div>
+</html>
